@@ -111,6 +111,7 @@ function Index() {
           </nav>
           <a
             href={`tel:${PHONE}`}
+            dir="ltr"
             className="rounded-md bg-primary px-4 py-2 text-sm font-bold text-primary-foreground transition-colors hover:bg-clay"
           >
             050 070 8445
@@ -145,7 +146,7 @@ function Index() {
                   href={`tel:${PHONE}`}
                   className="rounded-md bg-saffron px-6 py-3 font-bold text-charcoal transition-colors hover:bg-charcoal-foreground"
                 >
-                  اطلب الآن · 050 070 8445
+                  اطلب الآن · <span dir="ltr">050 070 8445</span>
                 </a>
                 <a
                   href={MAPS_URL}
@@ -217,7 +218,7 @@ function Index() {
           ))}
         </div>
         <p className="mt-6 text-sm text-muted-foreground">
-          للاستفسار عن الأسعار وطلبات الولائم، اتصل على 050 070 8445.
+          للاستفسار عن الأسعار وطلبات الولائم، اتصل على <span dir="ltr">050 070 8445</span>.
         </p>
       </section>
 
@@ -266,7 +267,7 @@ function Index() {
             <p className="mb-1 text-muted-foreground">العنوان</p>
             <p className="font-bold">شارع الغرابي، حي العمل، الرياض ١٢٦٤٣</p>
             <p className="mt-2 text-muted-foreground">
-              للطلب: <span className="font-bold text-foreground">050 070 8445</span>
+              للطلب: <span dir="ltr" className="inline-block font-bold text-foreground">050 070 8445</span>
             </p>
           </div>
         </div>
@@ -286,7 +287,7 @@ function Index() {
             مطعم وشعبيات المهري
           </span>
           <p className="text-xs">شارع الغرابي، حي العمل، الرياض · مفتوح يوميًا ٦ ص – ١٢ م</p>
-          <a href={`tel:${PHONE}`} className="text-sm transition-colors hover:text-saffron">
+          <a href={`tel:${PHONE}`} dir="ltr" className="text-sm transition-colors hover:text-saffron">
             050 070 8445
           </a>
         </div>
